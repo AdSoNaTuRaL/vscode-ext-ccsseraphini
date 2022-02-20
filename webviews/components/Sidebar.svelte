@@ -1,5 +1,6 @@
 <script lang="ts">
-  let tweet = "";
+  const suffix = '\ncc @sseraphini';
+  let text = "";
 </script>
 
 <!-- FIX ALIGN -->
@@ -11,9 +12,12 @@
   />
 </div>
 
-<form>
+<form on:submit|preventDefault={() => {
+    text = "";
+    console.log('send to twitter API');
+}}>
   <textarea 
-    bind:value={tweet} 
+    bind:value={text} 
     id="tweet" 
     rows="10" 
     placeholder="Write your tweet concept/question here" 
@@ -22,15 +26,13 @@
     }} 
   />
 
-  <p>Typed characters: {tweet.length}</p>
+  <p>Typed characters: {text.length}</p>
   <p>Maximum characters: 264</p>
   
   
   <button style="margin-top: 16px;" on:click={() => {
     // Add Validation before send to twitter a
-    console.log('send to twitter API');
-    tweet = "";
+    const tweet = encodeURIComponent(`${text}${suffix}`);
+    tsvscode.postMessage({ type: 'onInfo', value: tweet });
   }}>Tweet</button>
 </form>
-
-<pre>{JSON.stringify(tweet, null, 2)}</pre>
