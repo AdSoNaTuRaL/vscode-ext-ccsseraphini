@@ -1,7 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
-import { HelloWorldPanel } from "./HelloWorldPanel";
 import { SidebarProvider } from "./SidebarProvider";
 
 export function activate(context: vscode.ExtensionContext) {
@@ -13,8 +12,10 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("ccsseraphini.helloWorld", () => {
-      HelloWorldPanel.createOrShow(context.extensionUri);
+    vscode.commands.registerCommand("ccsseraphini.ccsseraphini", async () => {
+      await vscode.commands.executeCommand(
+        "workbench.view.extension.ccsseraphini-view"
+      );
     })
   );
 
