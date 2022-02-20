@@ -21,17 +21,10 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(
     vscode.commands.registerCommand("ccsseraphini.refresh", async () => {
-      // HelloWorldPanel.kill();
-      // HelloWorldPanel.createOrShow(context.extensionUri);
       await vscode.commands.executeCommand("workbench.action.closeSidebar");
       await vscode.commands.executeCommand(
         "workbench.view.extension.ccsseraphini-view"
       );
-      // setTimeout(() => {
-      //   vscode.commands.executeCommand(
-      //     "workbench.action.webview.openDeveloperTools"
-      //   );
-      // }, 500);
     })
   );
 }
