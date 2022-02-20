@@ -10,7 +10,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:ccsseraphini.helloWorld",
+    "onCommand:ccsseraphini.ccsseraphini",
     "onCommand:ccsseraphini.refresh",
     "onView:ccsseraphini-sidebar"
   ],
@@ -38,8 +38,9 @@
     },
     "commands": [
       {
-        "command": "ccsseraphini.helloWorld",
-        "title": "Hello World"
+        "command": "ccsseraphini.ccsseraphini",
+        "category": "Twitter",
+        "title": "cc @sseraphini"
       },
       {
         "command": "ccsseraphini.refresh",
