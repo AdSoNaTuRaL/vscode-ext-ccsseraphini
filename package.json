@@ -16,8 +16,8 @@
     "url": "https://github.com/AdSoNaTuRaL/vscode-ext-ccsseraphini/issues",
     "email": "adsonhenriquesilva@gmail.com"
   },
-  "homepage": "",
-  "license": "",
+  "homepage": "https://github.com/AdSoNaTuRaL/vscode-ext-ccsseraphini/blob/main/README.md",
+  "license": "https://github.com/AdSoNaTuRaL/vscode-ext-ccsseraphini/blob/main/LICENSE",
   "galleryBanner": {
     "color": "#444cf7",
     "theme": "dark"
