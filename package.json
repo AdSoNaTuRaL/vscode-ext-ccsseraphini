@@ -1,8 +1,27 @@
 {
   "name": "ccsseraphini",
   "displayName": "cc @sseraphini",
-  "description": "Keeping track of stuff",
+  "description": "VSCode extension that tag cc @sseraphini on Twitter",
   "version": "0.0.1",
+  "publisher": "adsonatural",
+  "author": {
+    "name": "Adson Henrique"
+  },
+  "icon": "media/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdSoNaTuRaL/vscode-ext-ccsseraphini"
+  },
+  "bugs": {
+    "url": "https://github.com/AdSoNaTuRaL/vscode-ext-ccsseraphini/issues",
+    "email": "adsonhenriquesilva@gmail.com"
+  },
+  "homepage": "",
+  "license": "",
+  "galleryBanner": {
+    "color": "#444cf7",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.52.0"
   },
