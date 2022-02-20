@@ -1,6 +1,10 @@
 <script lang="ts">
   import { suffix, maxTweetLength } from "../../src/constants";
-  let text = "";
+  let text = tsvscode.getState()?.text || "";
+
+  $: {
+    tsvscode.setState({ text })
+  }
 </script>
 
 <div style="display: flex;">
