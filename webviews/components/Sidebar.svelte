@@ -3,12 +3,11 @@
   let text = "";
 </script>
 
-<!-- FIX ALIGN -->
-<div align="center">
+<div style="display: flex;">
   <img 
     src="https://pbs.twimg.com/profile_images/1494329046678659072/RprvW5s4_400x400.jpg" 
     alt="Seraphini Icon" 
-    style="max-width: 100px; border-radius: 100px; padding: 8px;"
+    style="max-width: 100px; border-radius: 100px; padding: 8px; margin: auto;"
   />
 </div>
 
