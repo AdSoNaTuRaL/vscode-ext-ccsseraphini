@@ -1,4 +1,4 @@
-# ccsseraphini README
+# cc @sseraphini
 
 This is the README for your extension "ccsseraphini". After writing up a brief description, we recommend including the following sections.
 
