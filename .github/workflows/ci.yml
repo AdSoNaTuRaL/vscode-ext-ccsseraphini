@@ -1,10 +1,12 @@
+name: VSCode CI
 on:
   push:
     branches:
-    - main
+      - main
+
   release:
     types:
-    - created
+      - created
 
 jobs:
   build:
@@ -12,17 +14,20 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
+
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+
     - name: Install Node.js
       uses: actions/setup-node@v1
       with:
         node-version: 10.x
+
     - run: npm install
 
-  - name: Publish
-    if: startsWith(github.ref, 'refs/tags/releases/') && matrix.os == 'ubuntu-latest'
-    run: npm run deploy
-    env:
-      VSCE_PAT: ${{ secrets.VSCE_TOKEN }}
+    - name: Publish
+      if: startsWith(github.ref, 'refs/tags/releases/') && matrix.os == 'ubuntu-latest'
+      run: npm run deploy
+      env:
+        VSCE_PAT: ${{ secrets.VSCE_TOKEN }}
