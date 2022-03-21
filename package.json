@@ -2,7 +2,7 @@
   "name": "ccsseraphini",
   "displayName": "cc @sseraphini",
   "description": "VSCode extension that tag cc @sseraphini on Twitter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "adsonatural",
   "author": {
     "name": "Adson Henrique"
@@ -30,7 +30,6 @@
   ],
   "activationEvents": [
     "onCommand:ccsseraphini.ccsseraphini",
-    "onCommand:ccsseraphini.refresh",
     "onView:ccsseraphini-sidebar"
   ],
   "main": "./dist/extension.js",
@@ -60,11 +59,6 @@
         "command": "ccsseraphini.ccsseraphini",
         "category": "Twitter",
         "title": "cc @sseraphini"
-      },
-      {
-        "command": "ccsseraphini.refresh",
-        "category": "cc @sseraphini",
-        "title": "Refresh"
       }
     ]
   },
