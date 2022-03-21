@@ -2,7 +2,7 @@
   "name": "ccsseraphini",
   "displayName": "cc @sseraphini",
   "description": "VSCode extension that tag cc @sseraphini on Twitter",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "publisher": "adsonatural",
   "author": {
     "name": "Adson Henrique"
