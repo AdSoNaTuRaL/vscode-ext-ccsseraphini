@@ -1,65 +1,41 @@
-# cc @sseraphini
+# cc @sseraphini VSCode Extension
 
-This is the README for your extension "ccsseraphini". After writing up a brief description, we recommend including the following sections.
+Base code for VSCode Extension
 
-## Features
+## Getting started
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+First, install the dependencies. Then run the debug server:
 
-For example if there is an image subfolder under your extension project workspace:
+```bash
+$ yarn install
 
-\!\[feature X\]\(images/feature-x.png\)
+# then
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+$ yarn watch
+```
 
-## Requirements
+## VSCode Commands
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+First of all, you need to open Command Palette (`Ctrl + Shift + P`). Then few commands will be available to you. You just need to start typing `cc`, as you can see in the image below.
 
-## Extension Settings
+<img src="https://user-images.githubusercontent.com/26275918/159290138-263955e2-92d0-4157-924d-857e0a89d2bf.png" />
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+> Both commands do almost the same thing.
 
-For example:
+## Sidebar
 
-This extension contributes the following settings:
+The core of the cc @sseraphini extension is on sidebar.
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+<img src="https://user-images.githubusercontent.com/26275918/159291018-211e3e40-b33a-4cfb-8081-4447dd5be90a.png" />
 
-## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+From there you can write your tweet and the extension will do the rest.
 
-## Release Notes
+## Download the extension
 
-Users appreciate release notes as you update your extension.
+- You can download the extension [here](https://marketplace.visualstudio.com/items?itemName=adsonatural.ccsseraphini). 
 
-### 1.0.0
+- Or just launch VSCode Quick Open (`Ctrl + P`), and paste the following command `ext install adsonatural.ccsseraphini`, and press enter.
 
-Initial release of ...
+- Or you can find the extension in extension's store inside VSCode, searching for `ccsseraphini`
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
