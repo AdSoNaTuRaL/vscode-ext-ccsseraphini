@@ -23,11 +23,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 10.x
-
     - run: npm install
 
-  publish:
-    if: startsWith(github.ref, 'refs/tags/releases/') && matrix.os == 'ubuntu-latest'
-    run: npm run deploy
-    env:
-      VSCE_PAT: ${{ secrets.VSCE_TOKEN }}
+    - name: Publish
+      if: startsWith(github.ref, 'refs/tags/releases/') && matrix.os == 'ubuntu-latest'
+      run: npm run deploy
+      env:
+        VSCE_PAT: ${{ secrets.VSCE_TOKEN }}
