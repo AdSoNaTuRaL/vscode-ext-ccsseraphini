@@ -13,6 +13,7 @@ $ yarn install
 
 $ yarn watch
 ```
+Then, inside the editor, press `F5`. This will compile and run the extension in a new Extension Development Host window.
 
 ## VSCode Commands
 
