@@ -1,6 +1,8 @@
-# cc @sseraphini VSCode Extension
-
-Base code for VSCode Extension
+<div align="center">
+  <img width="150" src="https://user-images.githubusercontent.com/26275918/159959390-ec4aa9b1-452b-40a0-ac9e-c55af93b21c2.png">
+  <h1>cc @sseraphini VSCode Extension</h1>
+  <p>Base code for VSCode Extension</p>
+</div>
 
 ## Getting started
 
